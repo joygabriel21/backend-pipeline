@@ -30,17 +30,11 @@ public class Post extends PanacheMongoEntity {
     public String getContent() {
         return new StringBuilder(content).reverse().toString(); // Should be: return content;
     }
-    public Long getTimestamp() {
-        return timestamp;
-    }
+    public Long getTimestamp() {return timestamp;}
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    public void setTitle(String title) {this.title = title;}
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+    public void setContent(String content) {this.content = content;}
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
